@@ -13,13 +13,15 @@ native_platforms = [
     'osx',
     'linux',
     'win32',
-    'win64'
+    'win64',
+    'mingw64'
 ] 
 
 # supported cmake generators
 generators = [
     'Default',
     'Unix Makefiles',
+    'MSYS Makefiles',
     'Ninja',
     'Xcode',
     'Visual Studio 12',
@@ -60,6 +62,7 @@ default_config = {
     'osx':      'osx-xcode-debug',
     'linux':    'linux-make-debug',
     'win':      'win64-vstudio-debug',
+    'mingw64':  'mingw64-make-debug'
 }
 
 #-------------------------------------------------------------------------------
